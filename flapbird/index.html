@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Listar jogador</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Lista com as informações do jogador</h1>
+
+    <!-- https://wisdmlabs.com/blog/responsive-tables-using-css-div-tag/ -->
+    <style>
+        #resp-table {
+            width: 100%;
+            display: table;
+            text-align: center;
+        }
+
+        #resp-table-header {
+            display: table-header-group;
+            background-color: gray;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .table-header-cell {
+            display: table-cell;
+            padding: 10px;
+            text-align: justify;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #resp-table-body {
+            display: table-row-group;
+        }
+
+        .resp-table-row {
+            display: table-row;
+        }
+
+        .table-body-cell {
+            display: table-cell;
+            font-size: 25px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <div id="resp-table">
+        <div id="resp-table-header">
+            <div class="table-header-cell">Jogador</div>
+            <div class="table-header-cell">Record</div>
+        </div>
+        <div id="resp-table-body">
+
+            <!--
+            <div class="resp-table-row">
+                <div class="table-body-cell">
+                    Cell 1–1
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>    
+
+    <!-- inclusão da biblioteca jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script src="java.js"></script>
+
+    <script>
+        // proteção para não executar o javascript antes do documento estar pronto
+        $(function () {
+
+            // chamadas à função genérica
+            listagem_generica();
+
+        });
+    </script>
+</body>
+
+</html>
